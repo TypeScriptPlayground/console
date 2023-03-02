@@ -5,7 +5,7 @@ This adds an additional function for the global [`console`](https://developer.mo
 
 ###### import
 ```ts
-import 'https://deno.land/x/console_write@v1.0.3/mod.ts';
+import 'https://deno.land/x/console_write/mod.ts';
 ```
 
 ###### syntax
