@@ -59,5 +59,5 @@ Hello World 1!Hello World 2!   <--- No Linebreak
 
 
 
-## 
-I hope this little function will help you with your projects.
+## Final words
+I hope this little function will help you with your projects. 😜❤
