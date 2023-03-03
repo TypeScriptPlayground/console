@@ -3,7 +3,7 @@ declare global {
         /**
          * Writes `data` bytes from `data` to the underlying data stream.
          */
-        write(data : Uint8Array) : Promise<void>;
+        write(data : Uint8Array | string) : Promise<void>;
     }
 }
 
