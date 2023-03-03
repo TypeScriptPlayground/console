@@ -10,17 +10,18 @@ import 'https://deno.land/x/console_write/mod.ts';
 
 ###### syntax
 ```ts
-console.write(data : Uint8Array);
+console.write(data : Uint8Array | string);
 ```
 
 ###### example
 ```ts
 await console.write(new TextEncoder().encode('Hello World!'));
+await console.write('Hello World!');
 ```
 
 ###### output
 ```
-Hello World!
+Hello World!Hello World!
 ```
 
 
@@ -49,7 +50,7 @@ Hello World 2!   <--- Linebreak (\n)
 ###### using `console.write()`
 ```ts
 await console.write(new TextEncoder().encode('Hello World 1!'));
-await console.write(new TextEncoder().encode('Hello World 2!'));
+await console.write('Hello World 2!');
 ```
 results in:
 ```
