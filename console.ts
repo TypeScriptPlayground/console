@@ -7,6 +7,16 @@ declare global {
     }
 }
 
-console.write = async function(data : Uint8Array) {
-    await Deno.stdout.write(data);
+console.write = async function(data: Uint8Array | string) {
+
+    if (data instanceof Uint8Array) {
+        await Deno.stdout.write(data);
+    } else
+
+    if (typeof data === "string") {
+        await Deno.stdout.write(new TextEncoder().encode(data));
+    } else {
+        return;
+    }
 };
+
